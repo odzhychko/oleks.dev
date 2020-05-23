@@ -1,15 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
-    <title>my empty site</title>
+    <meta charset='utf-8'>
+    <title>WIP</title>
     <style>
       body {
-        background: rgb(95,107,112);
-        background: linear-gradient(125deg, rgba(95,107,112,1) 0%, rgba(41,64,62,1) 100%);
+        --light-shade: #eeebec;
+        --light-accent: #80847d;
+        --main: #8a6355;
+        --dark-accent: #8e8162;
+        --dark-shade: #24241e;
+        background: var(--light-shade);
+        color: var(--dark-shade);
+        font-family: sans;
+      }
+      .container {
+        max-width: 896px;
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
   </head>
   <body>
+    <div class='container'>
+      <nav>
+        <div>
+          <h1><a href='/'>oleks.dev</a></h1>
+        </div>
+      </nav>
+      <main>
+        <h1>WIP</h1>
+        <p>For now there is only <a href='https://github.com/ohleckes'>GitHub</a> and <a href='https://www.linkedin.com/in/ohleckes/'>LinkedIn</a>.</p>
+        <!-- 0.665625 = 426 / 640 -->
+        <div style='position:relative; padding-bottom:calc(66.5625% + 44px)'><iframe src='https://gfycat.com/ifr/scientificplayfulcollie?autoplay=1&controls=0&speed=2' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+      </main>
+    </div>
   </body>
 </html>
